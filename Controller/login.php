@@ -6,10 +6,13 @@ include_once ('../Model/password_check.php');
 
 $login = htmlspecialchars($_POST['login']);
 $psw = htmlspecialchars($_POST['psw']);
+$data = array();
+array_push($data, $login, $psw, $db);
 
+$user_test = new User($data);
 
 // Check form values then show members area.
-if(user_exist($login)) {
+if($user_test->user_exist()) {
 
     $dbPsw = password_check($login);
 
