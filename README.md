@@ -1,4 +1,6 @@
-# P4
+#Projet auquel je vais bientôt m'y coller
+
+# P4 
 Projet 4 OpenClassrooms : créez un blog pour un écrivain.
 
 Enoncé :
